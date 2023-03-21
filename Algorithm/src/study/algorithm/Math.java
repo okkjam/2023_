@@ -1,5 +1,7 @@
 package study.algorithm;
 
+import java.util.Arrays;
+
 public class Math {
 	public String[] solution(String[] quiz) {
         String[] answer = new String[quiz.length];
@@ -28,8 +30,14 @@ public class Math {
 					answer[i] = "X";				
 				}
 			}
-		};
-		
+		};	
         return answer;
     }
+	
+	public static void main(String[] args) {
+		Math main = new Math();
+		String[] quiz = {"19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"};
+		
+		System.out.println(Arrays.toString(main.solution(quiz)));
+	}
 }
