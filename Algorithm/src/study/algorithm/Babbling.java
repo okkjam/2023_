@@ -20,7 +20,6 @@ public class Babbling {
 	}
 	
 	public static void main(String[] args) {
-//		String[] babbling = {"aya", "yee", "u", "maa", "wyeoo"};
 		String[] babbling = {"ayaye", "uuuma", "ye", "yemawoo", "ayaa"};
 		
 		Babbling main = new Babbling();
