@@ -1,5 +1,7 @@
 package study.algorithm;
 
+import java.util.Arrays;
+
 public class Cut {
     public String[] solution(String my_str, int n) {
         int mod = my_str.length() % n;
@@ -21,4 +23,11 @@ public class Cut {
         
         return answer;
     }
+    
+    public static void main(String[] args) {
+		Cut main = new Cut();
+		String my_str = "TO_CHAR(sysdate, 'YYYYMMDD24MISS'";
+		
+		System.out.println(Arrays.toString(main.solution(my_str.toString(), 5)));
+	}
 }

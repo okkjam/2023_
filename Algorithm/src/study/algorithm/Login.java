@@ -19,4 +19,12 @@ public class Login {
         }
         return answer;
     }
+    
+    public static void main(String[] args) {
+		Login main = new Login();
+		String[] id_pw = {"meosseugi", "1234"};
+		String[][] db = {{"programmer02", "111111"}, {"programmer00", "134"}, {"programmer01", "1145"}};
+		
+		System.out.println(main.solution(id_pw, db));
+	}
 }
